@@ -1,0 +1,100 @@
+<svg viewBox="0 0 740 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dcmBlueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E6FE8" />
+      <stop offset="25%" stop-color="#0E48B3" />
+      <stop offset="70%" stop-color="#093582" />
+      <stop offset="100%" stop-color="#041E4F" />
+    </linearGradient>
+    <linearGradient id="dcmBlueBevel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#68A5FF" />
+      <stop offset="40%" stop-color="#1E65E2" />
+      <stop offset="100%" stop-color="#072A6C" />
+    </linearGradient>
+    <linearGradient id="dcmOrangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFA149" />
+      <stop offset="25%" stop-color="#FF6600" />
+      <stop offset="75%" stop-color="#E64900" />
+      <stop offset="100%" stop-color="#A82F00" />
+    </linearGradient>
+    <linearGradient id="dcmOrangeHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFC875" />
+      <stop offset="50%" stop-color="#FF7A1A" />
+      <stop offset="100%" stop-color="#D93D00" />
+    </linearGradient>
+    <filter id="dcm3dDepth" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="2.5" flood-color="#001438" flood-opacity="0.5" />
+    </filter>
+    <filter id="dcmOrangeGlow" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="2" dy="3" stdDeviation="2" flood-color="#852200" flood-opacity="0.4" />
+    </filter>
+  </defs>
+  <g transform="translate(10, 10)">
+    <g filter="url(#dcm3dDepth)">
+      <path d="M 28 30 L 72 30 C 104 30 120 48 120 78 C 120 108 104 126 72 126 L 28 126 Z" fill="#051C47" />
+      <path d="M 24 24 L 70 24 C 100 24 116 42 116 74 C 116 104 100 122 70 122 L 24 122 Z" fill="url(#dcmBlueGrad)" stroke="url(#dcmBlueBevel)" stroke-width="2.5" />
+      <path d="M 52 48 L 68 48 C 82 48 90 58 90 73 C 90 88 82 98 68 98 L 52 98 Z" fill="#FFFFFF" />
+      <path d="M 24 24 L 70 24 C 92 24 108 36 113 56 C 108 42 94 32 72 32 L 32 32 L 32 118 L 24 122 Z" fill="white" opacity="0.25" />
+      <path d="M 12 114 L 38 78 L 34 88 L 16 114 Z" fill="url(#dcmOrangeGrad)" />
+    </g>
+    <g filter="url(#dcmOrangeGlow)">
+      <path d="M 230 46 C 218 32 198 28 174 28 C 136 28 116 54 116 78 C 116 102 136 128 174 128 C 198 128 218 122 230 110 L 230 92 C 218 102 202 108 176 108 C 150 108 138 92 138 78 C 138 64 150 48 176 48 C 202 48 218 54 230 64 Z" fill="#8A2600" />
+      <path d="M 226 42 C 214 28 194 24 170 24 C 132 24 112 50 112 74 C 112 98 132 124 170 124 C 194 124 214 118 226 106 L 226 88 C 214 98 198 104 172 104 C 146 104 134 88 134 74 C 134 60 146 44 172 44 C 198 44 214 50 226 60 Z" fill="url(#dcmOrangeGrad)" stroke="url(#dcmOrangeHighlight)" stroke-width="2.5" />
+      <path d="M 170 24 C 194 24 214 28 226 42 L 222 48 C 210 36 192 32 170 32 C 142 32 126 46 120 62 C 122 46 138 24 170 24 Z" fill="#FFF4D1" opacity="0.45" />
+    </g>
+    <g filter="url(#dcm3dDepth)">
+      <path d="M 242 126 L 242 30 L 272 30 L 302 82 L 332 30 L 362 30 L 362 126 L 338 126 L 338 68 L 312 110 L 292 110 L 266 68 L 266 126 Z" fill="#051C47" />
+      <path d="M 238 122 L 238 24 L 268 24 L 298 76 L 328 24 L 358 24 L 358 122 L 334 122 L 334 62 L 308 104 L 288 104 L 262 62 L 262 122 Z" fill="url(#dcmBlueGrad)" stroke="url(#dcmBlueBevel)" stroke-width="2.5" />
+      <path d="M 238 24 L 268 24 L 298 76 L 292 78 L 266 32 L 244 32 L 244 122 L 238 122 Z" fill="white" opacity="0.25" />
+    </g>
+    <text x="195" y="162" text-anchor="middle" fill="#0B3B8A" font-size="31" font-weight="900" font-family="'Outfit', sans-serif" letter-spacing="2.5">PACKERS &amp; MOVERS</text>
+    <g transform="translate(195, 186)">
+      <rect x="-182" y="-12" width="40" height="9" rx="4.5" fill="#FF5E00" />
+      <text x="-132" y="-3" text-anchor="start" fill="#FF5E00" font-size="17.5" font-weight="800" font-family="'Outfit', sans-serif" letter-spacing="1">SAFE MOVE</text>
+      <circle cx="-6" cy="-8" r="5" fill="#0B3B8A" />
+      <text x="14" y="-3" text-anchor="start" fill="#FF5E00" font-size="17.5" font-weight="800" font-family="'Outfit', sans-serif" letter-spacing="1">HAPPY YOU</text>
+      <rect x="142" y="-12" width="40" height="9" rx="4.5" fill="#FF5E00" />
+    </g>
+  </g>
+  <g transform="translate(415, 6)">
+    <g filter="url(#dcm3dDepth)">
+      <path d="M 215 32 L 232 32 L 232 62 L 215 50 Z" fill="#0B3B8A" stroke="#2563EB" stroke-width="2" />
+      <path d="M 160 8 L 285 106 L 265 106 L 160 26 L 55 106 L 35 106 Z" fill="url(#dcmBlueGrad)" stroke="#4C8DFF" stroke-width="3" stroke-linejoin="round" />
+      <g transform="translate(142, 44)">
+        <rect x="0" y="0" width="16" height="16" rx="2" fill="#FF771C" stroke="#FFA352" stroke-width="1.5" />
+        <rect x="20" y="0" width="16" height="16" rx="2" fill="#FF771C" stroke="#FFA352" stroke-width="1.5" />
+        <rect x="0" y="20" width="16" height="16" rx="2" fill="#FF771C" stroke="#FFA352" stroke-width="1.5" />
+        <rect x="20" y="20" width="16" height="16" rx="2" fill="#FF771C" stroke="#FFA352" stroke-width="1.5" />
+      </g>
+    </g>
+    <path d="M -30 115 C -2 88 50 82 95 90 C 40 96 0 118 -20 146 C -35 168 -15 178 30 186 C 90 196 180 188 240 162 C 170 178 70 176 10 164 C -22 158 -38 135 -30 115 Z" fill="url(#dcmOrangeGrad)" />
+    <g transform="translate(18, 92)">
+      <rect x="0" y="0" width="60" height="9" rx="4.5" fill="#FF6600" />
+      <rect x="15" y="16" width="55" height="9" rx="4.5" fill="#FF6600" />
+      <rect x="24" y="32" width="46" height="9" rx="4.5" fill="#FF6600" />
+    </g>
+    <path d="M -12 152 C 55 186 160 198 275 168 C 210 192 100 196 15 174 C -2 170 -16 162 -12 152 Z" fill="url(#dcmBlueGrad)" />
+    <g transform="translate(68, 64)" filter="url(#dcm3dDepth)">
+      <rect x="0" y="16" width="135" height="86" rx="6" fill="url(#dcmBlueGrad)" stroke="#4C8DFF" stroke-width="2.5" />
+      <g transform="translate(42, 32)">
+        <path d="M 26 6 L 46 16 L 26 26 L 6 16 Z" fill="#FFFFFF" />
+        <path d="M 6 16 L 26 26 L 26 50 L 6 40 Z" fill="#E2E8F0" />
+        <path d="M 26 26 L 46 16 L 46 40 L 26 50 Z" fill="#CBD5E1" />
+        <path d="M 22 8 L 30 12 L 30 48 L 22 44 Z" fill="#0B3B8A" opacity="0.85" />
+      </g>
+      <path d="M 134 36 L 165 36 C 172 36 178 40 182 46 L 196 68 C 199 72 200 78 200 84 L 200 102 L 134 102 Z" fill="url(#dcmBlueGrad)" stroke="#4C8DFF" stroke-width="2.5" />
+      <path d="M 144 44 L 162 44 C 166 44 170 47 172 52 L 178 66 L 144 66 Z" fill="#D4E4FC" stroke="#093582" stroke-width="1.5" />
+      <path d="M 180 54 L 190 68 L 182 68 Z" fill="#D4E4FC" />
+      <rect x="188" y="78" width="10" height="18" rx="2" fill="#FFFFFF" stroke="#0B3B8A" stroke-width="1" />
+      <circle cx="184" cy="94" r="3.5" fill="#FFE066" stroke="#FFA300" stroke-width="1" />
+      <g transform="translate(24, 102)">
+        <circle cx="0" cy="0" r="15" fill="#05193A" stroke="#3B82F6" stroke-width="3" />
+        <circle cx="0" cy="0" r="7" fill="#FFFFFF" />
+      </g>
+      <g transform="translate(162, 102)">
+        <circle cx="0" cy="0" r="15" fill="#05193A" stroke="#3B82F6" stroke-width="3" />
+        <circle cx="0" cy="0" r="7" fill="#FFFFFF" />
+      </g>
+    </g>
+  </g>
+</svg>

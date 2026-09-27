@@ -1,0 +1,6 @@
+{
+  "name": "DCM Packers & Movers — Complete Digital Relocation Platform",
+  "description": "Production-grade digital relocation platform for DCM Packers & Movers featuring customer booking wizard, move tracking, admin command center, staff mobile application, and Firebase-ready architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

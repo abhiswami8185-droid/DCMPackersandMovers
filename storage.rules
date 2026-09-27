@@ -1,0 +1,47 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isImage() {
+      return request.resource.contentType.matches('image/.*');
+    }
+
+    function isPDF() {
+      return request.resource.contentType.matches('application/pdf');
+    }
+
+    // 1. Customer before-move condition photos & survey photos
+    match /moves/{bookingId}/condition_photos/{photoId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isImage() && request.resource.size < 10 * 1024 * 1024;
+    }
+
+    // 2. Staff operation photos (packing, loading, seal verification)
+    match /moves/{bookingId}/staff_photos/{photoId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isImage() && request.resource.size < 10 * 1024 * 1024;
+    }
+
+    // 3. Digital Proof of Delivery (POD) & Signatures
+    match /moves/{bookingId}/pod/{fileId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && (isImage() || isPDF()) && request.resource.size < 10 * 1024 * 1024;
+    }
+
+    // 4. Invoices & Consignment Documentation
+    match /moves/{bookingId}/documents/{docId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated();
+    }
+
+    // 5. Customer Damage Claim Photos
+    match /claims/{claimId}/{photoId} {
+      allow read: if isAuthenticated();
+      allow write: if isAuthenticated() && isImage() && request.resource.size < 10 * 1024 * 1024;
+    }
+  }
+}
