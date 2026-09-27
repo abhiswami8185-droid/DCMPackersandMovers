@@ -61,7 +61,8 @@ React 19 + TypeScript + Vite
 
 ### Install Dependencies
 ```bash
-npm install
+npm ci
+# or: npm install
 ```
 
 ### Run Local Development Server
