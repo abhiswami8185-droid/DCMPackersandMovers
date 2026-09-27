@@ -88,17 +88,19 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col font-sans">
-      {/* 1. Global Ecosystem Bar (Switch between Public, Admin, Staff & Roles) */}
-      <EcosystemBar
-        currentView={currentView}
-        onViewChange={(view) => {
-          setCurrentView(view);
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
-        currentUserRole={currentUserRole}
-        onRoleChange={(role) => setCurrentUserRole(role)}
-        onOpenTour={() => setIsTourOpen(true)}
-      />
+      {/* 1. Global Admin Ecosystem & System Status Bar — Conditionally displayed ONLY in Admin Panel */}
+      {currentView === 'admin' && (
+        <EcosystemBar
+          currentView={currentView}
+          onViewChange={(view) => {
+            setCurrentView(view);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          currentUserRole={currentUserRole}
+          onRoleChange={(role) => setCurrentUserRole(role)}
+          onOpenTour={() => setIsTourOpen(true)}
+        />
+      )}
 
       {/* 2. Main Viewport Rendering Based on Ecosystem Selection */}
       {currentView === 'admin' ? (

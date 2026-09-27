@@ -95,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src={heroBannerImg}
                 onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = '/dcm-hero-banner.jpg';
+                  (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}dcm-hero-banner.jpg`;
                 }}
                 alt="DCM Packers & Movers — Safe Move, Happy You. Your Trusted Partner in Packing & Moving"
                 className="w-full h-auto aspect-[1376/768] object-cover sm:object-contain bg-slate-50 transition-transform duration-300 group-hover:scale-[1.01]"

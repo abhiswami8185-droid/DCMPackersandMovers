@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import { Shield, Smartphone, Globe, UserCheck, Bell, Compass, X } from 'lucide-react';
+import { Shield, Smartphone, Globe, Bell, Compass, X } from 'lucide-react';
 import { UserRole } from '../../types';
-import { notificationService, AppNotification } from '../../services/notificationService';
+import { notificationService } from '../../services/notificationService';
 
 interface EcosystemBarProps {
   currentView: 'public' | 'admin' | 'staff';
   onViewChange: (view: 'public' | 'admin' | 'staff') => void;
-  currentUserRole: UserRole;
-  onRoleChange: (role: UserRole) => void;
+  currentUserRole?: UserRole;
+  onRoleChange?: (role: UserRole) => void;
   onOpenTour: () => void;
 }
 
 export const EcosystemBar: React.FC<EcosystemBarProps> = ({
   currentView,
   onViewChange,
-  currentUserRole,
-  onRoleChange,
+  currentUserRole: _currentUserRole,
+  onRoleChange: _onRoleChange,
   onOpenTour,
 }) => {
   const [notificationsOpen, setNotificationsOpen] = useState(false);
@@ -76,7 +76,7 @@ export const EcosystemBar: React.FC<EcosystemBarProps> = ({
           </button>
         </div>
 
-        {/* Role Demo Simulator, Notifications & Backend Indicator */}
+        {/* Notifications Tray */}
         <div className="flex items-center gap-2.5 ml-auto relative">
           {/* Notifications Trigger */}
           <button
@@ -91,32 +91,6 @@ export const EcosystemBar: React.FC<EcosystemBarProps> = ({
               </span>
             )}
           </button>
-
-          {/* Role selector */}
-          <div className="hidden lg:flex items-center gap-1.5 text-slate-400">
-            <UserCheck className="w-3.5 h-3.5 text-orange-400" />
-            <span>Active Role:</span>
-            <select
-              value={currentUserRole}
-              onChange={(e) => onRoleChange(e.target.value as UserRole)}
-              className="bg-slate-800 border border-slate-700 text-white rounded px-2 py-0.5 text-xs focus:outline-none focus:border-orange-500"
-            >
-              <option value="customer">Customer (Rahul Swami)</option>
-              <option value="super_admin">Super Admin (Sunil Sharma)</option>
-              <option value="operations_manager">Operations Manager (Rajesh Kumar)</option>
-              <option value="sales_manager">Sales Manager (Priya Mehra)</option>
-              <option value="surveyor">Surveyor (Amit Verma)</option>
-              <option value="packing_supervisor">Packing Supervisor (Gurpreet Singh)</option>
-              <option value="delivery_staff">Delivery Lead (Manoj Yadav)</option>
-            </select>
-          </div>
-
-          <div className="flex items-center gap-1 text-[11px] text-slate-400">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            <span>Local Store</span>
-            <span className="text-slate-500">·</span>
-            <span className="text-slate-400 hidden sm:inline">Firebase Ready</span>
-          </div>
 
           {/* Notifications Dropdown Drawer */}
           {notificationsOpen && (
